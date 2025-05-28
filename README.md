@@ -15,9 +15,9 @@ f.&nbsp;&nbsp;&nbsp;*time_difference* : The time difference between the DIMM and
 
 2. Extracts the year (YYYY) from the original input, searches for the CFHT URL that is accociated with the year, compares the CFHT data with the 6-column data frame, matches the midpoint_time (HST) from the data frame to the closest CFHT measurement, and creates a new data frame with the original 6 columns of data plus 7 more from the CFHT data set. The new 7 columns are: <br><br>
 a.&nbsp;&nbsp;*CFHT_datetime* : The closest time the CFHT measurement was taken (HST) <br>
-b.&nbsp;&nbsp;*CHFT_windspeed* : The windspeed at that time (m/s) <br>
-c.&nbsp;&nbsp;*CHFT_wind_direction* : The wind direction from East to West at that time (dec) <br> 
-d.&nbsp;&nbsp;*CHFT_temp* : Temperature at that time (°C) <br>
+b.&nbsp;&nbsp;*CFHT_windspeed* : The windspeed at that time (m/s) <br>
+c.&nbsp;&nbsp;*CFHT_wind_direction* : The wind direction from East to West at that time (dec) <br> 
+d.&nbsp;&nbsp;*CFHT_temp* : Temperature at that time (°C) <br>
 e.&nbsp;&nbsp;*CFHT_humidity* : Humidity at that time (%) <br>
 f.&nbsp;&nbsp;&nbsp;*CFHT_pressure* : Pressure at that time (Pa) <br>
 g.&nbsp;&nbsp;*CFHT_time_diff* : The time difference between the midpoint_time and CFHT_datetime (seconds) <br>
