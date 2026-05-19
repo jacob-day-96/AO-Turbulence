@@ -34,11 +34,11 @@ import requests
 ```
 
   **`test`**
-1. Run though each date per year to gather data files (skip the first two - these are test files) (Note: Start and end dates should be datetime objects)
-2. Combine '{date}_results.csv' to one data file labeled '{year}.csv'
-3. Load the original CSV into a data frame
-4. Calculate the new column 'seeing_ground_layer' assuming Kolmogorov turbulence spectra
-5. Save the updated data frame to a new CSV file
+ 1. Run though each date per year to gather data files (skip the first two - these are test files) (Note: Start and end dates should be datetime objects)
+ 2. Combine '{date}_results.csv' to one data file labeled '{year}.csv'
+ 3. Load the original CSV into a data frame
+ 4. Calculate the new column 'seeing_ground_layer' assuming Kolmogorov turbulence spectra
+ 5. Save the updated data frame to a new CSV file
 
 
 
@@ -62,18 +62,17 @@ import requests
  5. Statistical visualization
  6. LSTM forecasting model
  
- ============================================================
- ### 1. make_csv_files.ipynb
- ============================================================
+ 
+ ### 1. make_csv_files.ipynb  
+ 
  
  Main data engineering pipeline that constructs the master dataset.
 
  FUNCTION: **`make_csv_files(year: string)`**
  
  Takes a year in "YYYY" format (string) and generates daily datasets.
- ----------------------------
- WORKFLOW
- ----------------------------
+ 
+ #### WORKFLOW
  
  1. Load CFHT yearly weather data
  2. Iterate over all dates in year
@@ -83,10 +82,8 @@ import requests
  * Match DIMM ↔ MASS (nearest timestamp, tolerance ~900s)
  * Match result ↔ CFHT (nearest timestamp)
 
-----------------------------
-FEATURES
-----------------------------
- 
+ #### FEATURES
+
  DIMM:
  * dimm_val
 
@@ -112,28 +109,23 @@ FEATURES
  Derived:
  * ground_layer turbulence (Kolmogorov)
  
- ----------------------------
- OUTPUT
- ----------------------------
+ #### OUTPUT
  
  * {date}_result.csv
  
 
-
-============================================================
 ### 2. convertCSVToFits.ipynb
-============================================================
- *
- * Converts merged CSV dataset into FITS format.
- *
- * WORKFLOW:
- * - Load daily CSV files
- * - Merge into master dataset
- * - Convert to FITS for faster I/O
- *
- * OUTPUT:
- * - master.fits
- */
+
+ Converts merged CSV dataset into FITS format.
+ 
+ #### WORKFLOW:
+ * Load daily CSV files
+ * Merge into master dataset
+ * Convert to FITS for faster I/O
+ 
+ #### OUTPUT:
+ * master.fits
+ 
 
 /**
  * ============================================================
