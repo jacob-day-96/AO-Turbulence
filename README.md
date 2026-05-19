@@ -64,7 +64,7 @@ import requests
  
  
  ### 1. make_csv_files.ipynb  
- 
+ ---
  
  Main data engineering pipeline that constructs the master dataset.
 
@@ -78,7 +78,8 @@ import requests
  2. Iterate over all dates in year
  3. Load DIMM + MASS daily data from URLs
  
- Time alignment:
+ #### Time alignment:
+
  * Match DIMM ↔ MASS (nearest timestamp, tolerance ~900s)
  * Match result ↔ CFHT (nearest timestamp)
 
@@ -88,6 +89,7 @@ import requests
  * dimm_val
 
  MASS layers:
+ * mass_val
  * 500m
  * 1km
  * 2km
@@ -96,15 +98,15 @@ import requests
  * 16km
  
  CFHT:
- * wind_speed
- * wind_direction
- * temperature
- * humidity
- * pressure
+ * wind_speed (m/s)
+ * wind_direction (°)
+ * temperature (°C)
+ * humidity (%)
+ * pressure (Pa)
  
  Time differences:
- * dimm_mass_dt
- * dimm_cfht_dt
+ * dimm_mass_dt (s)
+ * dimm_cfht_dt (s)
  
  Derived:
  * ground_layer turbulence (Kolmogorov)
@@ -112,9 +114,10 @@ import requests
  #### OUTPUT
  
  * {date}_result.csv
- 
+ *
 
-### 2. convertCSVToFits.ipynb
+ ### 2. convertCSVToFits.ipynb
+ ---
 
  Converts merged CSV dataset into FITS format.
  
@@ -125,34 +128,33 @@ import requests
  
  #### OUTPUT:
  * master.fits
+ *
+ 
+ ### 3. mass_file_to_csv.ipynb
+ ---
+ 
+ Converts raw MASS .mass files into CSV format.
+ 
+ 
+ #### LINUX DATA DOWNLOAD
  
 
-/**
- * ============================================================
- * 3. mass_file_to_csv.ipynb
- * ============================================================
- *
- * Converts raw MASS .mass files into CSV format.
- *
- * ----------------------------
- * LINUX DATA DOWNLOAD
- * ----------------------------
- *
- * curl -s https://www.cfht.hawaii.edu/ObsInfo/Weather/mkam/MASSdata/out/ \
- * | grep -o '18[^"]*\.mass\.bz2' \
- * | while read f; do
- *     curl -O "https://www.cfht.hawaii.edu/ObsInfo/Weather/mkam/MASSdata/out/$f"
- *   done
- *
- * cat 18*.mass.bz2 > ../2018_floating.mass.bz2
- *
- * ----------------------------
- * PROCESSING
- * ----------------------------
- *
- * - Convert .mass → CSV
- * - Convert timestamps:
- *   UTC → HST
+ Example (using 2018):
+ ```
+ curl -s https://www.cfht.hawaii.edu/ObsInfo/Weather/mkam/MASSdata/out/ \
+ | grep -o '18[^"]*\.mass\.bz2' \
+ | while read f; do
+     curl -O "https://www.cfht.hawaii.edu/ObsInfo/Weather/mkam/MASSdata/out/$f"
+   done
+ 
+ cat 18*.mass.bz2 > ../2018_floating.mass.bz2
+ ```
+ 
+ #### PROCESSING
+ 
+ * Convert .mass → CSV
+ * Convert timestamps:
+ * UTC → HST
  *
  * FUNCTION: read_mass_file(filename)
  *
