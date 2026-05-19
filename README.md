@@ -147,46 +147,46 @@
  ---
 
  i. **`box_plots.ipynb`**<br>
- → month/year boxplots
+   → month/year boxplots
  <br>
 
  ii. **`CDFs.ipynb`**<br>
- → even/odd comparisons<br>
- → first/second half comparisons
+   → even/odd comparisons<br>
+   → first/second half comparisons
  <br>
 
  iii. **`CFHT_histograms.ipynb`**<br>
- → histogram + CDF analysis using Doane rule
+   → histogram + CDF analysis using Doane rule
  <br>
 
  iv. **`comparison_graphs.ipynb`**<br>
- → fixed vs floating density plots<br>
- → KDE-based comparisons
+   → fixed vs floating density plots<br>
+   → KDE-based comparisons
  <br>
 
  v. **`correlation_matrix.ipynb`**<br>
- → correlation between MASS layers, DIMM, CFHT<br>
- → identifies unexpected correlations
+   → correlation between MASS layers, DIMM, CFHT<br>
+   → identifies unexpected correlations
  <br>
 
  vi. **`floating_layer_plots.ipynb`**<br>
- → MASS floating layer processing
+   → MASS floating layer processing
  <br>
 
  vii. **`histogram_choice.ipynb`**<br>
- → compares Sturges, Rice, Doane<br>
- → selects Doane’s rule
+   → compares Sturges, Rice, Doane<br>
+   → selects Doane’s rule
  <br>
 
  viii. **`layer_strengths.ipynb`**<br>
- → histogram + CDF per MASS layer<br>
- → 500m → 16km<br>
- → stats: mean, median, mode, std
+   → histogram + CDF per MASS layer<br>
+   → 500m → 16km<br>
+   → stats: mean, median, mode, std
  <br>
 
  ix. **`median_per_bin_plots.ipynb`**<br>
- → median-per-bin using Doane bins<br>
- → trend extraction<br>
+   → median-per-bin using Doane bins<br>
+   → trend extraction<br>
  <br>
 
  ### 6. forecast_model.ipynb
