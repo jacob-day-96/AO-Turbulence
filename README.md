@@ -166,119 +166,100 @@ import requests
  * grouped by timestamp
  <br>
 
- * ============================================================
- * 4. plot_functions.ipynb
- * ============================================================
- *
- * Shared visualization utility library.
- *
- * FUNCTIONS:
- *
- * - doanes_rule_bins
- * - cdf_even_odd
- * - cdf_comparison
- * - doane_hist
- * - plot_median_per_bin_doane
- * - month_year_boxplot
- *
- * PURPOSE:
- * - Standardized statistical plotting
- * - CDF comparisons
- * - Doane binning
- * - Seasonal/yearly analysis
- * - Median-per-bin trends
- */
+ ### 4. plot_functions.ipynb
+ ---
+ 
+ Shared visualization utility library.
+ 
+ FUNCTIONS:
+ 
+ * **`doanes_rule_bins`**
+ * **`cdf_even_odd`**
+ * **`cdf_comparison`**
+ * **`doane_hist`**
+ * **`plot_median_per_bin_doane`**
+ * **`month_year_boxplot`**
+ 
+ PURPOSE:
+ * Standardized statistical plotting
+ * CDF comparisons
+ * Doane binning
+ * Seasonal/yearly analysis
+ * Median-per-bin trends
+ <br>
 
-/**
- * ============================================================
- * 5. VISUALIZATION NOTEBOOKS
- * ============================================================
- */
+ ### 5. VISUALIZATION NOTEBOOKS
+ ---
 
-/**
- * box_plots.ipynb
- * - month/year boxplots
- */
+ 1. **`box_plots.ipynb`**
+ * month/year boxplots
+ <br>
 
-/**
- * CDFs.ipynb
- * - even/odd comparisons
- * - first/second half comparisons
- */
+ 2. **`CDFs.ipynb`**
+ * even/odd comparisons
+ * first/second half comparisons
+ <br>
 
-/**
- * CFHT_histograms.ipynb
- * - histogram + CDF analysis using Doane rule
- */
+ * **`CFHT_histograms.ipynb`**
+ * histogram + CDF analysis using Doane rule
+ <br>
 
-/**
- * comparison_graphs.ipynb
- * - fixed vs floating density plots
- * - KDE-based comparisons
- */
+ * **`comparison_graphs.ipynb`**
+ * fixed vs floating density plots
+ * KDE-based comparisons
+ <br>
 
-/**
- * correlation_matrix.ipynb
- * - correlation between MASS layers, DIMM, CFHT
- * - identifies unexpected correlations
- */
+ * **`correlation_matrix.ipynb`**
+ * correlation between MASS layers, DIMM, CFHT
+ * identifies unexpected correlations
+ <br>
 
-/**
- * floating_layer_plots.ipynb
- * - MASS floating layer processing
- */
+ * **`floating_layer_plots.ipynb`**
+ * MASS floating layer processing
+ <br>
 
-/**
- * histogram_choice.ipynb
- * - compares Sturges, Rice, Doane
- * - selects Doane’s rule
- */
+ * **`histogram_choice.ipynb`**
+ * compares Sturges, Rice, Doane
+ * selects Doane’s rule
+ <br>
 
-/**
- * layer_strengths.ipynb
- * - histogram + CDF per MASS layer
- * - 500m → 16km
- * - stats: mean, median, mode, std
- */
+ * **`layer_strengths.ipynb`**
+ * histogram + CDF per MASS layer
+ * 500m → 16km
+ * stats: mean, median, mode, std
+ <br>
 
-/**
- * median_per_bin_plots.ipynb
- * - median-per-bin using Doane bins
- * - trend extraction
- */
+ * **`median_per_bin_plots.ipynb`**
+ * median-per-bin using Doane bins
+ * trend extraction
+ <br>
 
-/**
- * ============================================================
- * 6. forecast_model.ipynb
- * ============================================================
- *
+ ### 6. forecast_model.ipynb
+ ---
+ 
  * LSTM forecasting model trained on full dataset.
- *
- * PURPOSE:
- * - Predict next-day atmospheric conditions
- *
- * INPUT:
- * - 30+ parameters across multiple years
- *
- * PIPELINE:
- * - preprocessing
- * - scaling
- * - sequence building
- * - LSTM training
- * - prediction
- *
- * CONCEPT:
- * "Given past atmospheric behavior, predict tomorrow."
- */
+ 
+ #### PURPOSE:
+ Predict next-day atmospheric conditions
+ 
+ #### INPUT:
+ 30+ parameters across multiple years
+ 
+ #### PIPELINE:
+ * preprocessing
+ * scaling
+ * sequence building
+ * LSTM training
+ * prediction
+ 
+ #### CONCEPT:
+ "Given past atmospheric behavior, predict tomorrow."
+ <br>
 
-/**
- * ============================================================
- * SUMMARY
- * ============================================================
- *
+ ## SUMMARY
+ 
  * Raw telescope + atmospheric data
  * → cleaned merged dataset
  * → statistical analysis
  * → visualization suite
  * → machine learning forecasting (LSTM)
- */
