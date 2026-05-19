@@ -114,7 +114,7 @@ import requests
  #### OUTPUT
  
  * {date}_result.csv
- *
+ <br>
 
  ### 2. convertCSVToFits.ipynb
  ---
@@ -128,8 +128,8 @@ import requests
  
  #### OUTPUT:
  * master.fits
- *
- 
+ <br>
+
  ### 3. mass_file_to_csv.ipynb
  ---
  
@@ -152,19 +152,20 @@ import requests
  
  #### PROCESSING
  
- * Convert .mass → CSV
- * Convert timestamps:
- * UTC → HST
- *
- * FUNCTION: read_mass_file(filename)
- *
- * Extracts:
- * - floating layer: heights + strengths
- * - fixed layer: heights + strengths
- * - grouped by timestamp
- */
+ Convert .mass → CSV
+ Convert timestamps:
+ UTC → HST
+ <br>
 
-/**
+ FUNCTION: **`read_mass_file(filename)`**
+ <br>
+
+ Extracts:
+ * floating layer: heights + strengths
+ * fixed layer: heights + strengths
+ * grouped by timestamp
+ <br>
+
  * ============================================================
  * 4. plot_functions.ipynb
  * ============================================================
