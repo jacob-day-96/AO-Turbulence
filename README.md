@@ -8,6 +8,8 @@
  * Canada-France-Hawaii Telescope (CFHT)
  
  The dataset spans ~2009–2025 and includes atmospheric seeing, turbulence layers, and meteorological measurements.
+
+ This project implements a complete data processing and analysis framework for multi-instrument atmospheric observations, combining DIMM, MASS, and CFHT datasets to quantify turbulence structure, examine statistical behavior across atmospheric layers, and develop predictive models for future atmospheric conditions.
  
  ### Pipeline stages:
  1. Data acquisition and merging (DIMM + MASS + CFHT)
