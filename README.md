@@ -44,28 +44,26 @@ import requests
 
 
 /**
- * ============================================================
- * OVERVIEW + SUMMARY
- * ============================================================
- *
- * This project is a data processing and visualization pipeline
- * for atmospheric turbulence analysis using datasets from:
- *
+ ============================================================
+ ## OVERVIEW + SUMMARY
+ ============================================================
+ 
+ This project is a data processing and visualization pipeline for atmospheric turbulence analysis using datasets from:
+ 
  * - Differential Image Motion Monitor (DIMM)
  * - Multi-Aperture Scintillation Sensor (MASS)
  * - Canada-France-Hawaii Telescope (CFHT)
- *
- * The dataset spans ~2009–2025 and includes atmospheric seeing,
- * turbulence layers, and meteorological measurements.
- *
- * Pipeline stages:
- * 1. Data acquisition and merging (DIMM + MASS + CFHT)
- * 2. CSV → FITS conversion
- * 3. Time-aligned dataset construction
- * 4. Feature engineering
- * 5. Statistical visualization
- * 6. LSTM forecasting model
- */
+ 
+ The dataset spans ~2009–2025 and includes atmospheric seeing, turbulence layers, and meteorological measurements.
+ 
+ ### Pipeline stages:
+ 1. Data acquisition and merging (DIMM + MASS + CFHT)
+ 2. CSV → FITS conversion
+ 3. Time-aligned dataset construction
+ 4. Feature engineering
+ 5. Statistical visualization
+ 6. LSTM forecasting model
+ 
 
 /**
  * ============================================================
