@@ -43,16 +43,14 @@ import requests
 
 
 
-/**
- ============================================================
  ## OVERVIEW + SUMMARY
- ============================================================
+ 
  
  This project is a data processing and visualization pipeline for atmospheric turbulence analysis using datasets from:
  
- * - Differential Image Motion Monitor (DIMM)
- * - Multi-Aperture Scintillation Sensor (MASS)
- * - Canada-France-Hawaii Telescope (CFHT)
+ * Differential Image Motion Monitor (DIMM)
+ * Multi-Aperture Scintillation Sensor (MASS)
+ * Canada-France-Hawaii Telescope (CFHT)
  
  The dataset spans ~2009–2025 and includes atmospheric seeing, turbulence layers, and meteorological measurements.
  
