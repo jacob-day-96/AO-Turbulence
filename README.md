@@ -62,70 +62,67 @@ import requests
  5. Statistical visualization
  6. LSTM forecasting model
  
+ ============================================================
+ ### 1. make_csv_files.ipynb
+ ============================================================
+ 
+ Main data engineering pipeline that constructs the master dataset.
 
-/**
- * ============================================================
- * 1. make_csv_files.ipynb
- * ============================================================
- *
- * Main data engineering pipeline that constructs the master dataset.
- *
- * FUNCTION: make_csv_files(year: string)
- *
- * Takes a year in "YYYY" format (string) and generates daily datasets.
- *
- * ----------------------------
- * WORKFLOW
- * ----------------------------
- *
- * 1. Load CFHT yearly weather data
- * 2. Iterate over all dates in year
- * 3. Load DIMM + MASS daily data from URLs
- *
- * Time alignment:
- * - Match DIMM ↔ MASS (nearest timestamp, tolerance ~900s)
- * - Match result ↔ CFHT (nearest timestamp)
- *
- * ----------------------------
- * FEATURES
- * ----------------------------
- *
- * DIMM:
- * - dimm_val
- *
- * MASS layers:
- * - 500m
- * - 1km
- * - 2km
- * - 4km
- * - 8km
- * - 16km
- *
- * CFHT:
- * - wind_speed
- * - wind_direction
- * - temperature
- * - humidity
- * - pressure
- *
- * Time differences:
- * - dimm_mass_dt
- * - dimm_cfht_dt
- *
- * Derived:
- * - ground_layer turbulence (Kolmogorov)
- *
- * ----------------------------
- * OUTPUT
- * ----------------------------
- *
+ FUNCTION: **`make_csv_files(year: string)`**
+ 
+ Takes a year in "YYYY" format (string) and generates daily datasets.
+ ----------------------------
+ WORKFLOW
+ ----------------------------
+ 
+ 1. Load CFHT yearly weather data
+ 2. Iterate over all dates in year
+ 3. Load DIMM + MASS daily data from URLs
+ 
+ Time alignment:
+ * Match DIMM ↔ MASS (nearest timestamp, tolerance ~900s)
+ * Match result ↔ CFHT (nearest timestamp)
+
+----------------------------
+FEATURES
+----------------------------
+ 
+ DIMM:
+ * dimm_val
+
+ MASS layers:
+ * 500m
+ * 1km
+ * 2km
+ * 4km
+ * 8km
+ * 16km
+ 
+ CFHT:
+ * wind_speed
+ * wind_direction
+ * temperature
+ * humidity
+ * pressure
+ 
+ Time differences:
+ * dimm_mass_dt
+ * dimm_cfht_dt
+ 
+ Derived:
+ * ground_layer turbulence (Kolmogorov)
+ 
+ ----------------------------
+ OUTPUT
+ ----------------------------
+ 
  * {date}_result.csv
- */
+ 
 
-/**
- * ============================================================
- * 2. convertCSVToFits.ipynb
- * ============================================================
+
+============================================================
+### 2. convertCSVToFits.ipynb
+============================================================
  *
  * Converts merged CSV dataset into FITS format.
  *
