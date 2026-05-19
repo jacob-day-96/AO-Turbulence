@@ -16,7 +16,7 @@
  4. Feature engineering
  5. Statistical visualization
  6. LSTM forecasting model
- 
+ <br>
  
  ### 1. make_csv_files.ipynb  
  ---
@@ -146,46 +146,46 @@
  ### 5. VISUALIZATION NOTEBOOKS
  ---
 
- i. **`box_plots.ipynb`**
+ i. **`box_plots.ipynb`**<br>
  → month/year boxplots
  <br>
 
- ii. **`CDFs.ipynb`**
- → even/odd comparisons
+ ii. **`CDFs.ipynb`**<br>
+ → even/odd comparisons<br>
  → first/second half comparisons
  <br>
 
- iii. **`CFHT_histograms.ipynb`**
+ iii. **`CFHT_histograms.ipynb`**<br>
  → histogram + CDF analysis using Doane rule
  <br>
 
- iv. **`comparison_graphs.ipynb`**
- → fixed vs floating density plots
+ iv. **`comparison_graphs.ipynb`**<br>
+ → fixed vs floating density plots<br>
  → KDE-based comparisons
  <br>
 
- v. **`correlation_matrix.ipynb`**
- → correlation between MASS layers, DIMM, CFHT
+ v. **`correlation_matrix.ipynb`**<br>
+ → correlation between MASS layers, DIMM, CFHT<br>
  → identifies unexpected correlations
  <br>
 
- vi. **`floating_layer_plots.ipynb`**
+ vi. **`floating_layer_plots.ipynb`**<br>
  → MASS floating layer processing
  <br>
 
- vii. **`histogram_choice.ipynb`**
- → compares Sturges, Rice, Doane
+ vii. **`histogram_choice.ipynb`**<br>
+ → compares Sturges, Rice, Doane<br>
  → selects Doane’s rule
  <br>
 
- viii. **`layer_strengths.ipynb`**
- → histogram + CDF per MASS layer
- → 500m → 16km
+ viii. **`layer_strengths.ipynb`**<br>
+ → histogram + CDF per MASS layer<br>
+ → 500m → 16km<br>
  → stats: mean, median, mode, std
  <br>
 
- ix. **`median_per_bin_plots.ipynb`**
- → median-per-bin using Doane bins
+ ix. **`median_per_bin_plots.ipynb`**<br>
+ → median-per-bin using Doane bins<br>
  → trend extraction
  <br>
 
@@ -213,8 +213,8 @@
 
  ## SUMMARY
  
- * Raw telescope + atmospheric data
-   → cleaned merged dataset
-   → statistical analysis
-   → visualization suite
+ * Raw telescope + atmospheric data<br>
+   → cleaned merged dataset<br>
+   → statistical analysis<br>
+   → visualization suite<br>
    → machine learning forecasting (LSTM)
