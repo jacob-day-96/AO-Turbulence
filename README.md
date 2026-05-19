@@ -186,7 +186,7 @@
 
  ix. **`median_per_bin_plots.ipynb`**<br>
  → median-per-bin using Doane bins<br>
- → trend extraction
+ → trend extraction<br>
  <br>
 
  ### 6. forecast_model.ipynb
