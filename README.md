@@ -42,7 +42,7 @@
 
  ## Example: Atmospheric Seeing
 
- ![Atmospheric seeing illustration](assets/seeing_example.png)
+ ![Atmospheric seeing illustration](Assets/seeing_example.png)
  Image from https://astroimagery.com/astronomy/what-does-seeing-mean-in-astrophotography/
  <br>
 
