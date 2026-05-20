@@ -6,6 +6,12 @@
 
  This phenomenon is known as **optical turbulence**, and it is the primary reason stars appear to “twinkle” from the ground.
 
+ ### Example: Atmospheric Seeing
+
+ ![Atmospheric seeing illustration](Assets/seeing_example.png)
+ Image from: https://astroimagery.com/astronomy/what-does-seeing-mean-in-astrophotography/
+ <br>
+
  ### What is “Seeing”?
 
  In astronomy, **seeing** refers to the blurring and distortion of astronomical images caused by atmospheric turbulence. Good seeing corresponds to stable atmospheric conditions and sharper images, while poor seeing results in blurred and unstable observations.
@@ -38,12 +44,6 @@
  5. Analyzing long-term trends (2009–present)
  6. Developing predictive models for future seeing conditions
  7. Evaluating how turbulence impacts observational astronomy quality
- <br>
-
- ## Example: Atmospheric Seeing
-
- ![Atmospheric seeing illustration](Assets/seeing_example.png)
- Image from: https://astroimagery.com/astronomy/what-does-seeing-mean-in-astrophotography/
  <br>
  <br>
 
