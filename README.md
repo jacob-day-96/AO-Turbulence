@@ -1,23 +1,52 @@
  ## OVERVIEW + SUMMARY
  
- 
- This project is a data processing and visualization pipeline for atmospheric turbulence analysis using datasets from:
- 
- * Differential Image Motion Monitor (DIMM)
- * Multi-Aperture Scintillation Sensor (MASS)
- * Canada-France-Hawaii Telescope (CFHT)
- 
- The dataset spans ~2009–2025 and includes atmospheric seeing, turbulence layers, and meteorological measurements.
+ ### What is optical turbulence?
 
- This project implements a complete data processing and analysis framework for multi-instrument atmospheric observations, combining DIMM, MASS, and CFHT datasets to quantify turbulence structure, examine statistical behavior across atmospheric layers, and develop predictive models for future atmospheric conditions.
- 
- ### Pipeline stages:
- 1. Data acquisition and merging (DIMM + MASS + CFHT)
- 2. CSV → FITS conversion
- 3. Time-aligned dataset construction
- 4. Feature engineering
- 5. Statistical visualization
- 6. LSTM forecasting model
+ When light from astronomical objects travels through Earth’s atmosphere, it passes through layers of air with varying temperature, density, and wind velocity. These fluctuations cause the air’s **refractive index** to change randomly in space and time.
+
+ This phenomenon is known as **optical turbulence**, and it is the primary reason stars appear to “twinkle” from the ground.
+
+ ### What is “Seeing”?
+
+ In astronomy, **seeing** refers to the blurring and distortion of astronomical images caused by atmospheric turbulence. Good seeing corresponds to stable atmospheric conditions and sharper images, while poor seeing results in blurred and unstable observations.
+
+ Seeing is typically quantified as the **full width at half maximum (FWHM)** of a star’s point spread function (PSF), measured in arcseconds.
+
+ ### How We Measure Seeing and Turbulence?
+
+ This project combines multiple complementary instruments:
+
+ #### DIMM (Differential Image Motion Monitor)
+ Measures atmospheric seeing by tracking the relative motion of star images formed through separate apertures. It provides a direct estimate of image distortion caused by turbulence.
+
+ #### MASS (Multi-Aperture Scintillation Sensor)
+ Measures turbulence strength as a function of altitude by analyzing scintillation (intensity fluctuations) of starlight. This enables reconstruction of vertical turbulence profiles in the upper atmosphere.
+
+ #### CFHT (Canada–France–Hawaii Telescope)
+ Provides high-quality astronomical observations used both for validation and for studying the impact of atmospheric conditions on real science data.
+
+ ---
+
+ ## Project Goals
+
+ This pipeline implements an end-to-end framework for:
+
+ 1. Cleaning and harmonizing multi-instrument observational data
+ 2. Aligning DIMM, MASS, and CFHT datasets across time
+ 3. Characterizing statistical properties of atmospheric turbulence
+ 4. Decomposing turbulence into vertical atmospheric layers
+ 5. Analyzing long-term trends (2009–present)
+ 6. Developing predictive models for future seeing conditions
+ 7. Evaluating how turbulence impacts observational astronomy quality
+ <br>
+
+ ## Example: Atmospheric Seeing
+
+ ![Atmospheric seeing illustration](assets/seeing_example.png)
+ Image from https://astroimagery.com/astronomy/what-does-seeing-mean-in-astrophotography/
+ <br>
+
+ ## Methodology and Data Pipeline
  <br>
  
  ### 1. make_csv_files.ipynb  
