@@ -16,13 +16,13 @@
 
  This project combines multiple complementary instruments:
 
- #### * DIMM (Differential Image Motion Monitor)
+ #### - DIMM (Differential Image Motion Monitor)
  Measures atmospheric seeing by tracking the relative motion of star images formed through separate apertures. It provides a direct estimate of image distortion caused by turbulence.
 
- #### * MASS (Multi-Aperture Scintillation Sensor)
+ #### - MASS (Multi-Aperture Scintillation Sensor)
  Measures turbulence strength as a function of altitude by analyzing scintillation (intensity fluctuations) of starlight. This enables reconstruction of vertical turbulence profiles in the upper atmosphere.
 
- #### * CFHT (Canada–France–Hawaii Telescope)
+ #### - CFHT (Canada–France–Hawaii Telescope)
  Provides high-quality astronomical observations used both for validation and for studying the impact of atmospheric conditions on real science data.
 
  ---
