@@ -18,7 +18,7 @@
 
  Seeing is typically quantified as the **full width at half maximum (FWHM)** of a star’s point spread function (PSF), measured in arcseconds.
 
- ### How We Measure Seeing and Turbulence?
+ ### How We Measure Seeing and Turbulence
 
  This project combines multiple complementary instruments:
 
