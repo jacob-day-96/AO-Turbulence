@@ -5,8 +5,7 @@
  When light from astronomical objects travels through Earth’s atmosphere, it passes through layers of air with varying temperature, density, and wind velocity. These fluctuations cause the air’s **refractive index** to change randomly in space and time.
 
  This phenomenon is known as **optical turbulence**, and it is the primary reason stars appear to “twinkle” from the ground.
-
- ### Example: Atmospheric Seeing
+ <br>
 
  ![Atmospheric seeing illustration](Assets/seeing_example.png)
  Image from: https://astroimagery.com/astronomy/what-does-seeing-mean-in-astrophotography/
